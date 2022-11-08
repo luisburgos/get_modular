@@ -5,7 +5,7 @@ Just a [GetX](https://pub.dev/packages/get) wrappers repo.
 Change the `main` app init:
 
 ```dart
-import 'package:get_modular/get_modular.dart'; 
+import 'package:get_modular/get_modular_wrappers.dart'; 
 
 void main() {
   runApp(
@@ -22,7 +22,7 @@ void main() {
 Create a `core_module.dart` file:
 
 ```dart
-import 'package:get_modular/get_modular.dart';
+import 'package:get_modular/get_modular_wrappers.dart';
 import 'modules/home_module';
 
 class CoreModule extends GetModule {
@@ -42,7 +42,7 @@ class CoreModule extends GetModule {
 Create a `home_module.dart`:
 
 ```dart
-import 'package:get_modular/get_modular.dart';
+import 'package:get_modular/get_modular_wrappers.dart';
 import '../app_routes.dart';
 
 class HomeModule extends Module {
