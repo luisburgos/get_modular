@@ -10,16 +10,18 @@ class GetAppWrapper extends StatelessWidget {
     required this.coreModule,
     required this.unknownPageRoute,
     required this.initialRoute,
+    this.appTitle = 'Get Module App Wrappers',
   }) : super(key: key);
 
   final GetModule coreModule;
   final String unknownPageRoute;
   final String initialRoute;
+  final String appTitle;
 
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-      title: 'Get App Test',
+      title: appTitle,
       debugShowCheckedModeBanner: false,
       unknownRoute: GetPage(
         name: unknownPageRoute,
