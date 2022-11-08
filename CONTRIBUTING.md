@@ -46,25 +46,27 @@ Bump commit examples:
  dart pub publish --dry-run
 ```
 
-### 5. Create Git tag
-
-```shell
- git tag -a <X.X.X+X> -m "A short tag description"
-```
-
-Here is a list of existing [tags](https://github.com/luisburgos/buzz/tags) in the repo.
-
-### 6. Push everything!
-
-```shell
-git push origin main
-git push --tags
-```
-
-### 7. Publish the package
+### 5. Publish the package
 
 When everything is ok, publish the package:
 
 ```shell
  dart pub publish
+```
+
+### 6. Create Git tag
+
+When the package has been published, now is time to seal the commit at the HEAD pushed with a tag: 
+
+```shell
+ git tag -a v<X.X.X+X> -m "A short tag description"
+```
+
+Here is a list of existing [tags](https://github.com/luisburgos/buzz/tags) in the repo.
+
+### 7. Push everything!
+
+```shell
+git push origin main
+git push --tags
 ```
