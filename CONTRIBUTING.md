@@ -40,6 +40,12 @@ Bump commit examples:
 - [chore: bump version to 0.0.5](https://github.com/luisburgos/buzz/commit/2cb8756188c50d374d17e6d2fafe055ff1fa3795)
 - [chore: bump version to 0.0.4](https://github.com/luisburgos/buzz/commit/44842aeb6cc197101ff07c0e44a7d1976b783b50)
 
+### 4.1 Run a dry run again
+
+```shell
+ dart pub publish --dry-run
+```
+
 ### 5. Create Git tag
 
 ```shell
