@@ -42,30 +42,55 @@ class CoreModule extends GetModule {
 Create a `home_module.dart`:
 
 ```dart
+import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:get_modular_wrappers/get_modular_wrappers.dart';
+
 import '../app_routes.dart';
 
-class HomeModule extends Module {
+class HomeRoutes {
+  static const root = '/';
+}
+
+class HomeModule extends GetModule {
   @override
-  List<ModularRoute> get routes => [
-        ChildRoute(
-          AppRoutes.root,
-          child: (context, args) => Scaffold(
-            body: Center(
-              child: Text('Home'),
-            ),
-          ),
-        ),
-      ];
+  List<GetRoute> get routes => [
+    HomeRoute(),
+  ];
+}
+
+class HomeRoute extends GetRoute {
+  HomeRoute();
+
+  @override
+  GetPage get asGetPage => GetPage(
+    name: AppRoutes.root,
+    page: () => const HomePage(),
+  );
+}
+
+class HomePage extends StatelessWidget {
+  const HomePage({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return const Scaffold(
+      body: Center(
+        child: Text('Home'),
+      ),
+    );
+  }
 }
 ```
 
 Preferable create a file `app_routes.dart` to map your app routes from modules routes:
 
 ```dart
+import 'modules/home_module.dart';
+
 class AppRoutes {
-  //static const root = HomeRoutes.root;
+  static const root = HomeRoutes.root;
   //static const login = LoginPage.routeName;
-  //static const notFound = '/not-found';
+  static const notFound = '/not-found';
 }
 ```
