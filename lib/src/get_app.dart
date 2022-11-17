@@ -10,6 +10,7 @@ class GetAppWrapper extends StatelessWidget {
     required this.coreModule,
     required this.unknownPageRoute,
     required this.initialRoute,
+    this.themeMode = ThemeMode.system,
     this.appTitle = 'Get Module App Wrappers',
   }) : super(key: key);
 
@@ -17,6 +18,7 @@ class GetAppWrapper extends StatelessWidget {
   final String unknownPageRoute;
   final String initialRoute;
   final String appTitle;
+  final ThemeMode themeMode;
 
   @override
   Widget build(BuildContext context) {
@@ -32,6 +34,9 @@ class GetAppWrapper extends StatelessWidget {
       }),
       initialRoute: initialRoute,
       getPages: coreModule.buildPages(),
+      theme: ThemeData(brightness: Brightness.light),
+      darkTheme: ThemeData(brightness: Brightness.dark),
+      themeMode: themeMode,
     );
   }
 }
