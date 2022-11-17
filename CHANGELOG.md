@@ -1,4 +1,4 @@
-## [0.0.2](https://github.com/luisburgos/get_modular/compare/v0.0.1...v0.0.2) (2022-11-08)
+## [0.0.3](https://github.com/luisburgos/get_modular/compare/v0.0.1...v0.0.3) (2022-11-17)
 
 
 ### Bug Fixes
@@ -9,6 +9,7 @@
 ### Features
 
 * add app title to get_app ([f39ba4e](https://github.com/luisburgos/get_modular/commit/f39ba4e935b1945c3b7893b8874026a66836c2e2))
+* add get_app themeMode support ([6d2b67e](https://github.com/luisburgos/get_modular/commit/6d2b67ea145a3ca7d3c67d87d86de2a6d93f3dd1))
 
 
 
