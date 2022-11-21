@@ -18,7 +18,7 @@ class GetAppWrapper extends StatelessWidget {
   final String unknownPageRoute;
   final String initialRoute;
   final String appTitle;
-  final ThemeMode themeMode;
+  final ThemeMode? themeMode;
 
   @override
   Widget build(BuildContext context) {
@@ -36,7 +36,7 @@ class GetAppWrapper extends StatelessWidget {
       getPages: coreModule.buildPages(),
       theme: ThemeData(brightness: Brightness.light),
       darkTheme: ThemeData(brightness: Brightness.dark),
-      themeMode: themeMode,
+      themeMode: themeMode ?? ThemeMode.system,
     );
   }
 }
