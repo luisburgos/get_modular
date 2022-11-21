@@ -1,3 +1,17 @@
+## [0.0.4](https://github.com/luisburgos/get_modular/compare/v0.0.3...v0.0.4) (2022-11-21)
+
+
+### Bug Fixes
+
+* nullable themeMode ([66496e6](https://github.com/luisburgos/get_modular/commit/66496e63904939c3fe08aeabd2106f8acdb315c4))
+
+
+### Features
+
+* add example app ([795937f](https://github.com/luisburgos/get_modular/commit/795937f80c970ce36f956c233f093dca3c1289b6))
+
+
+
 ## [0.0.3](https://github.com/luisburgos/get_modular/compare/v0.0.1...v0.0.3) (2022-11-17)
 
 
